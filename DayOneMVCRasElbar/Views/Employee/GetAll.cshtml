@@ -1,0 +1,78 @@
+﻿@model List<Employee>
+
+    <h1>Employees</h1>
+
+ <table class="table">
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="background-color: @ViewData["color"]">
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+
+                <td>
+                    @item.Address
+                </td>
+                <td>
+                    @item.Salary
+                </td>
+                
+
+            </tr>
+
+
+            
+    
+        }
+    </table> 
+
+            <h1>
+                @ViewData["temp"] 
+            </h1>
+
+            {
+                cairo , alex , giza
+            }
+            as object 
+
+            <select>
+    @foreach (var branch in ViewBag.Branches)
+                {
+                    <option>
+                        @branch
+                    </option>
+
+                   
+                }
+                )
+            </select>
+
+
+
+            <h1>
+                @ViewBag.Color
+                
+
+                
+            </h1>
+
+
+
+
+
+
+
+
+
+@*     <select>
+    @foreach (var branch in (List<string>)ViewData["Branches"])
+    {
+        <option>
+            @branch
+        </option>
+    }
+</select> *@
