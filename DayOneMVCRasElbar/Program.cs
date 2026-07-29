@@ -22,9 +22,20 @@ namespace DayOneMVCRasElbar
 
             app.MapStaticAssets();
             app.MapControllerRoute(
-                name: "default",
+                name: "default", /// defualt = home/privcy
                 pattern: "{controller=Home}/{action=Privacy}/{id?}")
                 .WithStaticAssets();
+
+            // custom route for Employees controller
+            app.MapControllerRoute(
+                name: "employees",
+                pattern: "Hamada", //employees = Hamada = > Employee/GetAll
+                defaults: new
+                {
+                    controller = "Employee",
+                    action = "GetAll"
+                });
+
 
             app.Run();
         }

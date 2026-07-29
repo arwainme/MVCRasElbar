@@ -1,0 +1,20 @@
+﻿
+<h1>Add new Employee</h1>
+<form method="post" action="/Employee/SaveAdd" class="form">
+    <label>
+        Enter name :
+    </label>
+    <input name="Name" value="@Model.Name">
+    <br>
+    <label>
+        Enter Address :
+    </label>
+    <input name="Address" value="@Model.Address">
+    <br>
+    <label>
+        Salary
+    </label>
+    <input name="Salary" value="@Model.Salary">
+    <br>
+    <input type="submit" value="Enter">
+</form>

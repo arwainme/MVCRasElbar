@@ -1,0 +1,14 @@
+﻿@model List<Department>
+
+    <h1>Show all Departments</h1>
+
+    <a href="/Department/Add" class="btn btn-primary">Add Department</a>
+
+    @foreach (var department in Model)
+    {
+        <div class="department">
+            <h2>@department.Name</h2>
+            <p>@department.Description</p>
+        <h1>@department.ManagerName</h1>
+    </div>
+}

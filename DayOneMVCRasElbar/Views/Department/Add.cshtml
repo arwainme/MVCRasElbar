@@ -1,0 +1,20 @@
+﻿@model Department
+<h1>Add new Department</h1>
+<form method="post" action="/Department/GetDepartments" class="form">
+    <label>
+        Enter name :
+    </label>
+    <input name="Name" value="@Model.Name">
+    <br>
+    <label>
+        Enter Description :
+    </label>
+    <input name="Description" value="@Model.Description">
+    <br>
+    <label>
+        MangerName
+    </label>
+    <input name="MangerName" value="@Model.ManagerName">
+    <br>
+    <input type="submit" value="Enter">
+</form>
